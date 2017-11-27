@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.head{
+	background: rgba(0,0,0,0.5);
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 15px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.p1{
+	margin-left: 30px;
+}
+.p2{
+	width: 150px;
+	height: 50px;
+	background: url(../images/logo.png) no-repeat center center;
+	background-size: 80% auto;
+}
+.p3{
+	margin-right: 20px;
+	font-size: 12px;
+}
+.banner{
+	background: url(../images/top-bg.png) no-repeat center top;
+	background-size: cover;
+	height: 250px;
+}
+.head ul{
+	display: none;
+}
+.head ul li{
+	float: left;
+	list-style: none;
+	margin: 10px 20px;
+}
+.head ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.pic{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.pic img{
+	width: 100%;
+}
+.pic-b{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0;
+}
+.pic-b p{
+	width: 49%;
+}
+.pic-b p img{
+	width: 100%;
+}
+.piclist{
+	
+}
+.piclist ul {
+	width: 100%;
+}
+.piclist ul li{
+	width: 93%;
+	margin: 10px;
+	margin-top: 0;
+	box-sizing: border-box;
+	list-style: none;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	padding: 8px;
+	line-height: 30px;
+}
+.piclist ul li img{
+	width: 100%;
+}
+.piclist ul li p:nth-of-type(1){
+	font-size: 14px;
+}
+.piclist ul li p:nth-of-type(2){
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between; 
+}
+
+
+@media only screen and (min-width:480px ) {
+	.piclist ul{display: flex;flex-wrap: wrap;justify-content: space-between;}
+	.piclist ul li{width: 42%;}
+}
+
+
+@media only screen and (min-width:768px ) {
+	
+.head ul{
+	display: block;
+}
+
+.p1{
+	display: none;
+}
+.p2{
+	margin-left: 30px;
+}
+.pic-b{width: 50%; float: right;padding-top: 10px;}
+.pic{width: 50%; float: left;}
+.piclist ul{width: 100%;justify-content: space-around;}
+.piclist ul li{width: 30%; margin: 0 0 20px 0;}
+
+
+}
+@media only screen and (min-width:1024px ) {
+.piclist ul li{width: 23%;}
+}
